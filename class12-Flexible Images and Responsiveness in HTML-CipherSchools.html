@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and responsiveness in html</title>
+</head>
+<body>
+<!--
+    <img src="https://wallpaperaccess.com/full/4081182.jpg" alt="Landscape"
+    srcset="https://wallpaperaccess.com/full/4081182.jpg 480w,
+    https://images.unsplash.com/photo-1669492809427-356a04cacbf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80 800w,
+     https://wallpaperaccess.com/full/4081182.jpg 1200w"
+     sizes="(max-width: 480px) 240px,
+        (max-width: 960px) 480px,
+        (max-width: 1440px) 960px">
+-->
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://wallpaperaccess.com/full/4081182.jpg">
+        <source media="(max-width: 900px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU">
+        <img src="https://images.unsplash.com/photo-1669492809427-356a04cacbf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="sat view of lake">
+    </picture> 
+</body>
+</html>
